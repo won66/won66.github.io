@@ -2,88 +2,163 @@
 <html lang="en">
 
 <head>
-	<title>최원석 Choi Wonseok</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>최원석 Choi Wonseok</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
 
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-	<link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/aos.css">
 
-	<link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
 
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 10px;
+      padding: 10px;
+      max-width: auto;
+      margin: 0 auto;
+    }
+
+	.grid-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+  </style>
+
+
+<link rel="icon" type="image/png" href="images/03_icon.png"/>
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span>C</span>hoiWonSeok</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
 
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>C</span>hoiWonSeok</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Portfolio</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+  <section class="ftco-section ftco-project">
+    <div class="container-fluid px-md-0">
+      <div class="row no-gutters justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Projects</h1>
+          <h2 id="projects-section" class="mb-4">Character</h2>
+          <p>캐릭터 작업물 모음</p>
+        </div>
+      </div>
+      <div class="grid-container" id="image-grid">
+        <!-- 이미지가 여기에서 동적으로 추가된다 -->
+      </div>
+    </div>
+  </section>
 
-	
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>최원석 ㅣ 용인시 기흥구 언동로 ㅣ abdnjs76@naver.com ㅣ +82-010-1234-5678</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg>
+  </div>
 
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p>
-						footer 내용 작성 필요;
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // 이미지 파일 목록
+      const images = [
+		"images/c_01.png",
 
+		
+        // 추가 이미지 경로를 여기에 추가
+      ];
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
+      // 이미지 그리드 컨테이너 선택
+      const imageGrid = document.getElementById('image-grid');
 
+      // 이미지 파일들을 grid-item으로 추가
+      images.forEach(src => {
+        const div = document.createElement('div');
+        div.className = 'grid-item';
+        const a = document.createElement('a');
+        a.href = src;
+        a.className = 'image-popup';
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = 'Project Image';
+        a.appendChild(img);
+        div.appendChild(a);
+        imageGrid.appendChild(div);
+      });
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-
-	<script src="js/main.js"></script>
+      // Magnific Popup 초기화
+      $('.image-popup').magnificPopup({
+        type: 'image',
+        gallery: {
+          enabled: true
+        }
+      });
+    });
+  </script>
 
 </body>
 
