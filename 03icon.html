@@ -332,8 +332,53 @@
           enabled: true
         }
       });
+
+      // 페이지 이동을 위한 버튼 기능 추가
+      const pages = ["01icon.html", "02icon.html", "03icon.html"];
+      const currentPage = window.location.pathname.split("/").pop();
+      const currentIndex = pages.indexOf(currentPage);
+
+      document.getElementById('prev-button').addEventListener('click', function () {
+        const prevIndex = (currentIndex - 1 + pages.length) % pages.length;
+        window.location.href = pages[prevIndex];
+      });
+
+      document.getElementById('next-button').addEventListener('click', function () {
+        const nextIndex = (currentIndex + 1) % pages.length;
+        window.location.href = pages[nextIndex];
+      });
     });
   </script>
+
+  <!-- 좌우 버튼 추가 -->
+  <div id="nav-buttons">
+    <button id="prev-button" class="nav-button">이전</button>
+    <button id="next-button" class="nav-button">다음</button>
+  </div>
+
+  <style>
+    #nav-buttons {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .nav-button:hover {
+      background-color: #555;
+    }
+  </style>
 
 </body>
 

@@ -65,11 +65,12 @@
 			</div>
 		</div>
 		</div>
-		<div class="mouse">
-			<a href="#" class="mouse-icon">
-				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-			</a>
-		</div>
+
+    <div id="mouse" onclick="document.getElementById('projects-title').scrollIntoView({behavior: 'smooth'});" 
+         style="z-index: 999; position: fixed; bottom: 20px; right: 20px; cursor: pointer; width: 50px; height: 50px; background-color: #3e64ff; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+        <span style="color: white; font-size: 24px;">&#x2193;</span>
+    </div>
+
 	</section>
 
 	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
@@ -100,11 +101,11 @@
 
 	
 
-	<section class="ftco-section ftco-project">
+	<section class="ftco-section ftco-project" id="projects-title">
 		<div class="container-fluid px-md-0">
 			<div class="row no-gutters justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Portfolio</h1>
+					<h1 class="big big-2" >Portfolio</h1>
 					<h2 id="projects-section" class="mb-4">Portfolio</h2>
 					<p>클릭하여 그림들을 확인할 수 있습니다. 왼쪽부터 UI/아이콘, 캐릭터 디자인, 습작 3가지 입니다.</p>
 				</div>
@@ -116,7 +117,7 @@
 			<div class="row no-gutters">
 				<div class = "col-md-4">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/icon/c1.png);" onclick="location.href='01icon.html'">
+						style="background-image: url(images/icon/c1.png); cursor: pointer;" onclick="location.href='01icon.html'">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
 							<h3><a href="01icon.html"> UI/Icon</a></h3>
@@ -125,7 +126,7 @@
 				</div>
 				<div class = "col-md-4">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/c/c_00.png);" onclick="location.href='02icon.html'">
+						style="background-image: url(images/c/c_00.png); cursor: pointer;" onclick="location.href='02icon.html'">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
 							<h3><a href="02icon.html"> Character</a></h3>
@@ -135,7 +136,7 @@
 
 				<div class = "col-md-4">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/t/00.jpg);" onclick="location.href='03icon.html'">
+						style="background-image: url(images/t/00.jpg); cursor: pointer;" onclick="location.href='03icon.html'">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
 							<h3><a href="03icon.html"> 습작/만화/모작</a></h3>
