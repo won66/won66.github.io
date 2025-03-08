@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최원석 포트폴리오</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slideshow {
+            width: 90vw; /* 컨테이너 너비 */
+            height: 90%; /* 슬라이드 높이 */
+            margin: 0% auto; /* 위아래 여백 */
+            position: relative;
+            overflow: hidden; /* 넘치는 부분 숨기기 */
+            background-color: #000;
+        }
+
+        .slideshow-container {
+            display: flex; /* 슬라이드 정렬 */
+            width: calc(40%); /* 다음 슬라이드 일부 보이게 조정 */
+            height: 100%;
+            transform: translateX(0); /* 초기 위치 */
+            transition: transform 1.5s ease; /* 슬라이드 애니메이션 */
+        }
+
+        .slideshow a {
+            flex-shrink: 0; /* 슬라이드 크기 고정 */
+            width: 100%; /* 현재 슬라이드 크기 */
+            height: 100%;
+            margin-right: 0%; /* 슬라이드 간 간격 */
+        }
+
+        .slideshow img {
+            width: 100%; /* 슬라이드 내부 이미지 너비 */
+            height: 100%; /* 슬라이드 내부 이미지 높이 */
+            object-fit: contain; /* 원본 비율 유지 */
+            background-color: #000; /* 이미지 없는 부분 배경 */
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <div class="slideshow-container">
+            <!-- 각 슬라이드에 링크 추가 -->
+            <a href="index.html"><img src="images/c/c_01.png" alt="Image 1"></a>
+            <a href="index.html"><img src="images/c/c_02.png" alt="Image 2"></a>
+            <a href="index.html"><img src="images/c/c_03.png" alt="Image 3"></a>
+            <a href="index.html"><img src="images/c/c_04.png" alt="Image 4"></a>
+            <a href="index.html"><img src="images/c/c_05.png" alt="Image 5"></a>
+            <a href="index.html"><img src="images/c/c_06.png" alt="Image 6"></a>
+            <a href="index.html"><img src="images/c/c_07.png" alt="Image 7"></a>
+            <a href="index.html"><img src="images/c/c_08.png" alt="Image 8"></a>
+        </div>
+    </div>
+
+    <script>
+        // 슬라이드 이동 동작
+        const slideshowContainer = document.querySelector('.slideshow-container');
+        const slides = document.querySelectorAll('.slideshow a');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        // 3초마다 슬라이드 이동
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+
+            // 슬라이드 이동: 슬라이드 간격 포함(82%)
+            slideshowContainer.style.transform = `translateX(-${(currentIndex * 82)}%)`;
+        }, 3000);
+    </script>
+</body>
+</html>
